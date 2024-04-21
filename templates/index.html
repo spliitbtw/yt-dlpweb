@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://repository-images.githubusercontent.com/307260205/b6a8d716-9c7b-40ec-bc44-6422d8b741a0">
+    <title>Video Downloader</title>
+</head>
+<body>
+    <h1><img src="https://repository-images.githubusercontent.com/307260205/b6a8d716-9c7b-40ec-bc44-6422d8b741a0" height="200px"></h1>
+    <form action="/download" method="post" onsubmit="return validateForm()">
+        <input type="text" id="video_url" name="video_url" placeholder="Enter Video URL" required>
+        <br><br>
+
+        <div id="format_selection">
+            <button id="mp3_button" type="button" onclick="selectFormat('mp3')">.mp3</button>
+            <button id="mp4_button" type="button" onclick="selectFormat('mp4')">.mp4</button>
+            <input type="hidden" id="download_format" name="download_format" value="mp3"> <!-- Default value -->
+        </div><br>
+
+        <button type="submit">Download</button>
+    </form>
+
+    <footer>
+        <ul>
+            <li><a href="https://github.com/yt-dlp/yt-dlp">Source Code</a></li>
+            <li><a href="https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md#supported-sites">Supported Sites</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        function selectFormat(format) {
+            document.getElementById('mp3_button').style.backgroundColor = '';
+            document.getElementById('mp4_button').style.backgroundColor = '';
+
+            var formatInput = document.getElementById('download_format');
+            formatInput.value = format;
+
+            if (format === 'mp3') {
+                document.getElementById('mp3_button').style.backgroundColor = '#541c69'; // Green for MP3
+            } else if (format === 'mp4') {
+                document.getElementById('mp4_button').style.backgroundColor = '#541c69'; // Green for MP4
+            }
+        }
+
+        function validateForm() {
+            var urlInput = document.getElementById('video_url');
+            if (urlInput.value.trim() === '') {
+                alert('Please enter a video URL.');
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>
