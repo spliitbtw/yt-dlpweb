@@ -1,129 +1,64 @@
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 94vh; /* Ensure full viewport height */
-    margin: 0;
-    background-color: #282828; /* Dark background color */
-    color: #ffffff; /* White text color */
-    font-family: Arial, sans-serif;
-    padding: 20px;
+    display: flex; flex-direction: column; min-height: 94vh; margin: 0; background-color: #282828; color: #ffffff; font-family: Arial, sans-serif; padding: 20px;
 }
-
 .wrapper {
-    flex: 1; /* Allow content to expand to fill available space */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex: 1; display: flex; flex-direction: column;justify-content: center;
 }
-
 h1 {
     text-align: center;
 }
-
 form {
-    width: 500px;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 30px;
-    background-color: #333; /* Darker background for form */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
-    position: relative;
+    width: 500px; max-width: 500px; margin: 0 auto; padding: 30px; background-color: #333; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); position: relative;
 }
-
 label {
     font-weight: bold;
     
 }
-
 input[type="text"],
 button {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 3px solid #541c69; /* Purple border */  
-    border-radius: 5px;
-    margin-bottom: 15px;
-    outline: none;
+    width: 100%; padding: 10px; box-sizing: border-box; border: 3px solid #541c69;  border-radius: 5px; margin-bottom: 15px; outline: none;
 }
-
 button {
-    background-color: #541c69; /* Purple button color */
-    color: #ffffff;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    background-color: #541c69; color: #ffffff; cursor: pointer; transition: background-color 0.3s ease;
 }
-
 button:hover {
-    background-color: #4d185e; /* Darker purple on hover */
+    background-color: #4d185e;
 }
-
 #format_selection {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+    display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;
 }
-
 #format_selection button {
-    flex-grow: 1;
-    background-color: #333;
-    color: #ffffff;
-    border: 3px solid #541c69;
-    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
-    width: 140px; /* Set a fixed width for the buttons */
-    padding: 15px;
-    margin: 0 5px; /* Add a small margin between the buttons */
+    flex-grow: 1; background-color: #333; color: #ffffff; border: 3px solid #541c69; transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; width: 140px; padding: 15px; margin: 0 5px;
 }
-
 #format_selection button:hover {
-    background-color: #541c69;
-    border-color: #541c69;
-    color: #ffffff;
+    background-color: #541c69; border-color: #541c69; color: #ffffff;
 }
-
 input[type="text"]::placeholder {
-    color: #ccc; /* Placeholder text color */
+    color: #ccc;
 }
-
 @media (max-width: 600px) {
     form {
         padding: 10px;
     }
 }
-
 footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #333; /* Dark background for footer */
-    color: #ffffff;
-    margin-top: auto; /* Push footer to the bottom */
+    text-align: center; padding: 20px 0; background-color: #333; color: #ffffff; margin-top: auto;
 }
-
 footer p {
     margin-bottom: 10px;
 }
-
 footer ul {
-    list-style: none;
-    padding: 0;
+    list-style: none; padding: 0;
 }
-
 footer ul li {
-    display: inline;
-    margin-right: 15px;
+    display: inline; margin-right: 15px;
 }
-
 footer ul li:last-child {
     margin-right: 0;
 }
-
 footer a {
-    color: #ffffff;
-    text-decoration: none;
-    transition: color 0.3s ease;
+    color: #ffffff; text-decoration: none; transition: color 0.3s ease;
 }
-
 footer a:hover {
-    color: #541c69; /* Green color on hover */
+    color: #541c69;
 }
