@@ -8,13 +8,13 @@
 - Open source
 - You can edit anything and feel free to ask any question / issue.
 
-#Guide
+# Guide
 
-##Download
+## Download
 
 Simply click on Code > Download ZIP and then extract wherever you want.
 
-##Running the server
+## Running the server
 
 To run the server, first you need to have installed Python, which you can download from the Microsoft Store, or the [official page](https://www.python.org/downloads/).
 
