@@ -4,7 +4,7 @@
 
 ### Features
 
-- yt-dlpweb is basically a [yt-dlp](https://github.com/yt-dlp/yt-dlp "yt-dlp source code")-based web server.
+- yt-dlpweb is basically a [yt-dlp](https://github.com/yt-dlp/yt-dlp "yt-dlp source code") based web server.
 - Open source
 - You can edit anything and feel free to ask any question / issue.
 
