@@ -60,7 +60,7 @@ def download():
 
     os.rename(final_filename, final_filename_sanitized)
 
-    delete_file_after_delay(final_filename_sanitized, 300)
+    delete_file_after_delay(final_filename_sanitized, 5)
 
     return send_file(final_filename_sanitized, as_attachment=True)
 

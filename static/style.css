@@ -1,69 +1,159 @@
 body {
-    display: flex; flex-direction: column; min-height: 94vh; margin: 0; background-color: #282828; color: #ffffff; font-family: Arial, sans-serif; padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #080705, #40434e);
+    color: #fffffa;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 16px;
+    padding: 20px;
+    overflow: hidden;
 }
+
 .wrapper {
-    flex: 1; display: flex; flex-direction: column;justify-content: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
 h1 {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 form {
-    align-items: center; 
-    width: 500px; max-width: 500px;  padding: 15px; background-color: #333; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); position: relative; margin: 0 auto;
-}
-label {
-    font-weight: bold;
+    align-items: center;
+    width: 500px;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #40434e;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+    transition: transform 0.3s ease;
     
 }
+
+form:hover {
+    transform: scale(1.02);
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
 input[type="text"],
 button {
-    width: 100%; padding: 10px; box-sizing: border-box; border: 3px solid #541c69;  border-radius: 5px; margin-bottom: 15px; outline: none;
+    font-family: "Comfortaa", sans-serif;
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+    border: 3px solid #702632;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    transition: border-color 0.3s ease;
 }
+
+input[type="text"]:focus,
+button:focus {
+    border-color: #702632;
+    
+    
+}
+
 button {
-    background-color: #541c69; color: #ffffff; cursor: pointer; transition: background-color 0.3s ease;
+    background-color: #912f40;
+    color: #fffffa;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
 button:hover {
-    background-color: #4d185e;
+    background-color: #912f40;
+    
 }
+
+button:active {
+    background-color: #702632;
+    transform: translateY(2px);
+}
+
 #format_selection {
-    display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }
+
 #format_selection button {
-    flex-grow: 1; background-color: #333; color: #ffffff; border: 3px solid #541c69; transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; width: 140px; padding: 15px; margin: 0 5px;
+    flex-grow: 1;
+    background-color: #912f40;
+    color: #fffffa;
+    border: 3px solid #702632;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    width: 140px;
+    padding: 15px;
+    margin: 0 5px;
 }
+
 #format_selection button:hover {
-    background-color: #541c69; border-color: #541c69; color: #ffffff;
+    background-color: #702632;
 }
+
+#format_selection button:focus {
+    background-color: #581e28;
+    transform: translateY(2px);
+}
+
 input[type="text"]::placeholder {
     color: #ccc;
 }
 
 @media screen and (max-width: 600px) {
     form {
-        width: 91%;
+        width: 80%;
         max-width: none;
     }
 }
 
 footer {
-    text-align: center; padding: 20px; background-color: #333; color: #ffffff; margin-top: auto;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 30px;
+    background-color: #40434e;
+    color: #fffffa;
+    width: 100%;
 }
+
 footer p {
     margin-bottom: 10px;
 }
+
 footer ul {
-    list-style: none; padding: 0;
+    list-style: none;
+    padding: 0;
 }
+
 footer ul li {
-    display: inline; margin-right: 15px;
+    display: inline;
+    margin-right: 15px;
 }
+
 footer ul li:last-child {
     margin-right: 0;
 }
+
 footer a {
-    color: #ffffff; text-decoration: none; transition: color 0.3s ease;
+    color: #fffffa;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
+
 footer a:hover {
-    color: #541c69;
+    color: #702632;
 }
