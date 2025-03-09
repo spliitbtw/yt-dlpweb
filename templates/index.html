@@ -43,14 +43,27 @@
   </footer>
   <script>
     function selectFormat(format) {
-      document.getElementById("mp3_button")
-      document.getElementById("mp4_button")
-
+      var mp3Button = document.getElementById("mp3_button");
+      var mp4Button = document.getElementById("mp4_button");
       var formatInput = document.getElementById("download_format");
+
+      if (format === 'mp3') {
+        mp3Button.classList.add("selected");
+        mp4Button.classList.remove("selected");
+      } else {
+        mp4Button.classList.add("selected");
+        mp3Button.classList.remove("selected");
+      }
+
       formatInput.value = format;
     }
-
   </script>
+  <style>
+    .selected {
+      background-color: #007bff;
+      color: white;
+    }
+  </style>
 </body>
 
 </html>
